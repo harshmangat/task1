@@ -32,6 +32,6 @@ for(let i=0; i < user.length; i++){
     break;
   
   }  else {
-    console.log('Your program is not working');
+    console.log('sorry! did not found it');
   }
 }
