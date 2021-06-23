@@ -23,12 +23,13 @@ let user = [
 
 let userInput = prompt('write your quetion please!');
 
+
 for(let i=0; i < user.length; i++){
   if(user[i].input === userInput){
-    alert(user[i].answer);
+    console.log(user[i].answer);
     break;
   } else if(!userInput) {
-    alert('HELLO WORLD!!!');
+    console.log('HELLO WORLD!!!');
     break;
   
   }  else {
