@@ -24,15 +24,20 @@ let user = [
 let userInput = prompt('write your quetion please!');
 
 
-for(let i=0; i < user.length; i++){
-  if(user[i].input === userInput){
-    console.log(user[i].answer);
-    break;
-  } else if(!userInput) {
-    console.log('HELLO WORLD!!!');
-    break;
-  
-  }  else {
-    console.log('sorry! did not found it');
+
+if(!userInput){
+  alert("HELLO WORLD!!!");
+} else {
+  let answer = "";
+  for(let i = 0; i < user.length;i++){
+    if(user[i].input === userInput){
+      answer = user[i].answer
+      break;
+    }
+  }
+  if(!answer){
+    alert('sorry dont know the answer....')
+  }else{
+    alert(answer);
   }
 }
