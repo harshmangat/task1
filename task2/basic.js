@@ -44,7 +44,7 @@ if(!recipeOf){
   if(!answer){
     alert("Sorry Not Able To Find Your Required Dish Recipe,Please change your taste..LOL😸 ")
   }else{
-    console.log(`"${answer.meal} takes ${answer.time} Hrs to cook and it's ingredients are: ${answer.ingredients.join(', ')}"`);
+    alert(`"${answer.meal} takes ${answer.time} Hrs to cook and it's ingredients are: ${answer.ingredients.join(', ')}"`);
   }
 }
 
