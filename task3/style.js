@@ -18,13 +18,13 @@ function startGame() {
     return startGame();
  } 
   
-  console.log(getMoveStatus(userSelect, computerSelect));
+  console.log(game(userSelect, computerSelect));
   
   const shouldContinue = confirm('Do you want to replay?');
   shouldContinue && startGame();
 }
 
-function getMoveStatus(userSelect, computerSelect) {
+function game(userSelect, computerSelect) {
   console.log(`User Select ${userSelect} Computer Select ${computerSelect}`)
   const userWins = 
   (userSelect === "rock" && computerSelect === "scissor") || 
@@ -42,21 +42,6 @@ function getMoveStatus(userSelect, computerSelect) {
   
   return "It's a Tie.";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
